@@ -9,7 +9,6 @@ app = Flask(__name__)
 RESPONSE_TIME = Gauge('website_response_time_seconds', 'Website Response Time')
 STATUS_CODE = Gauge('website_status_code', 'Website HTTP Status Code')
 
-# აქ ჩასვი მონიტორინგის საიტის URL
 URL = 'https://google.com'
 
 @app.route('/metrics')
